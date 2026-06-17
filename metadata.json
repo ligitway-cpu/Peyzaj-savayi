@@ -1,0 +1,6 @@
+{
+  "name": "Peyzaj Sarayı",
+  "description": "Peyzaj Sarayı premium peyzaj tasarımı ve uygulamaları.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
