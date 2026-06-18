@@ -75,8 +75,8 @@ export default function About() {
       >
         <div className="absolute inset-0 z-0">
           <Picture
-            src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?auto=format&fit=crop&w=1600&q=80"
-            alt="Forest backdrop"
+            src="https://images.unsplash.com/photo-1530731141654-59610f3c229e?auto=format&fit=crop&w=1600&q=80"
+            alt="Peyzaj Sarayı bitki üretim tesisi"
             loading="eager"
             fetchpriority="high"
             className="w-full h-full object-cover object-center brightness-[0.4]"
@@ -141,34 +141,49 @@ export default function About() {
       <section id="values-section" className="py-20 bg-white min-w-full border-y border-light/60">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
-          <div className="text-center max-w-xl mx-auto space-y-4 mb-14">
-            <div className="flex justify-center">
-              <SectionLabel>Temel Değerlerimiz</SectionLabel>
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            {/* Left aligned image panel */}
+            <div className="lg:col-span-5 animate-on-scroll">
+              <div className="relative rounded-2xl overflow-hidden border border-light shadow-xl select-none">
+                <Picture
+                  src="https://images.unsplash.com/photo-1599599810769-bcde5a160d32?auto=format&fit=crop&w=1200&q=80"
+                  alt="Uzman ekibimiz tarafından özenle yapılan bahçe dikimi"
+                  className="w-full h-[400px] sm:h-[500px] object-cover"
+                />
+                <div className="absolute inset-0 bg-stone-900/5 hover:bg-forest/5 transition-colors duration-300" />
+              </div>
             </div>
-            <h2 className="font-serif text-3xl sm:text-4xl font-bold text-forest text-balance">
-              Köklü Değerlerimizle Geleceği Yeşillendiriyoruz
-            </h2>
-          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {values.map((val, idx) => {
-              const Icon = val.icon;
-              return (
-                <div 
-                  id={`value-card-${idx}`}
-                  key={idx}
-                  className="bg-cream/40 border border-light/80 p-8 rounded-2xl text-center space-y-4 hover:shadow-md transition-all duration-300 group animate-on-scroll"
-                >
-                  <div className="w-14 h-14 rounded-full bg-forest text-gold flex items-center justify-center mx-auto shadow-xs group-hover:scale-105 transition-transform">
-                    <Icon className="w-6 h-6" />
-                  </div>
-                  <h3 className="font-serif text-xl font-bold text-forest">{val.title}</h3>
-                  <p className="text-xs text-charcoal/70 leading-relaxed font-light font-sans">
-                    {val.desc}
-                  </p>
-                </div>
-              );
-            })}
+            {/* Right values content list/cards */}
+            <div className="lg:col-span-7 space-y-8 animate-on-scroll">
+              <div className="space-y-4 text-left">
+                <SectionLabel>Temel Değerlerimiz</SectionLabel>
+                <h2 className="font-serif text-3xl sm:text-4xl font-bold text-forest leading-tight">
+                  Köklü Değerlerimizle Geleceği Yeşillendiriyoruz
+                </h2>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                {values.map((val, idx) => {
+                  const Icon = val.icon;
+                  return (
+                    <div 
+                      id={`value-card-${idx}`}
+                      key={idx}
+                      className="bg-cream/40 border border-light/80 p-6 rounded-2xl text-center space-y-3.5 hover:shadow-md transition-all duration-300 group"
+                    >
+                      <div className="w-12 h-12 rounded-full bg-forest text-gold flex items-center justify-center mx-auto shadow-xs group-hover:scale-105 transition-transform">
+                        <Icon className="w-5 h-5" />
+                      </div>
+                      <h3 className="font-serif text-lg font-bold text-forest leading-tight">{val.title}</h3>
+                      <p className="text-xs text-charcoal/70 leading-relaxed font-light font-sans">
+                        {val.desc}
+                      </p>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
           </div>
 
         </div>

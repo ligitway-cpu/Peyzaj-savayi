@@ -2,6 +2,7 @@ import React, { useState, useEffect, ReactNode } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "motion/react";
 import Picture from "../components/Picture";
+import { StatsBar } from "../components/StatsBar";
 import { 
   ArrowRight, 
   Compass, 
@@ -199,31 +200,43 @@ export default function Home({ onOpenQuote }: HomeProps) {
       title: "Peyzaj Tasarımı",
       desc: "Arazinizin yapısına özel 3D rüzgar ve güneş analizli estetik planlar üretiyoruz. Hayallerinizi mühendislik standartlarında çizime döküyoruz.",
       icon: Compass,
+      image: "https://images.unsplash.com/photo-1508849789987-4e5333c12b78?q=80&w=800",
+      alt: "Profesyonel peyzaj tasarımı örneği"
     },
     {
       title: "Bahçe Bakımı",
       desc: "Ziraat mühendisleri kontrolünde mevsimsel gübreleme ve profesyonel budama yapıyoruz. Bitkilerinizin zerafetini dört mevsim koruyoruz.",
       icon: Trees,
+      image: "https://images.unsplash.com/photo-1617104424032-b9bd6972d0e4?q=80&w=800",
+      alt: "Bahçe bakımı ve çalı budama hizmeti"
     },
     {
       title: "Rulo Çim Uygulama",
       desc: "Yabancı ot barındırmayan hazır rulo çimlerimizle bahçenizi saatler içinde kapatıyoruz. Güçlü kök tutunumu ile kusursuz yeşillik sağlıyoruz.",
       icon: Grid,
+      image: "https://images.unsplash.com/photo-1533460004989-cef01064af7e?q=80&w=800",
+      alt: "Rulo çim uygulama ve serim işlemi"
     },
     {
       title: "Süs Bitkisi Satışı",
       desc: "Seralarımızda özenle yetiştirdiğimiz ithal ve yerli soliter ağaçları sunuyoruz. Her bütçeye uygun sağlıklı ve budanmış fidan tedarik ediyoruz.",
       icon: Sprout,
+      image: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?q=80&w=800",
+      alt: "Tekkeköy'de süs bitkisi üretim tesisi"
     },
     {
       title: "Peyzaj Uygulamaları",
       desc: "Sert zemin, traverten yürüme yolları ve yapısal peyzaj duvarları inşa ediyoruz. Doğal taş kaplamalarıyla bahçenize asil bir iskelet kazandırıyoruz.",
       icon: Briefcase,
+      image: "https://images.unsplash.com/photo-1621271103984-7d9af24b6110?q=80&w=800",
+      alt: "Doğal taş döşeme ve sert zemin peyzaj uygulaması"
     },
     {
       title: "Sulama Sistemleri",
       desc: "Otomatik yağmur sensörlü akıllı sulama hatları ile %50 su tasarrufu sağlıyoruz. Bitki gruplarına göre nokta atışı nemlendirme planlıyoruz.",
       icon: Droplets,
+      image: "https://images.unsplash.com/photo-1591857177580-fc82b1784524?q=80&w=800",
+      alt: "Otomatik damla sulama sistemi kurulumu"
     }
   ];
 
@@ -253,16 +266,16 @@ export default function Home({ onOpenQuote }: HomeProps) {
         <div className="absolute inset-0 z-0">
           <Picture
             src="https://images.unsplash.com/photo-1558904541-efa8c3a30fc9?q=80&w=2000"
-            alt="Lush Garden Landscape"
+            alt="Samsun'da profesyonel peyzaj tasarımı ve bahçe düzenlemesi"
             loading="eager"
             fetchpriority="high"
             className="w-full h-full object-cover object-center scale-103 animate-[subtle-zoom_20s_infinite_alternate]"
           />
-          {/* Dark green overlay (linear-gradient right: 72% opacity left → 18% opacity right) */}
+          {/* Dark green overlay (linear-gradient right: 72% opacity left → 20% opacity right) */}
           <div 
             className="absolute inset-0"
             style={{
-              background: "linear-gradient(to right, rgba(27, 67, 50, 0.72) 0%, rgba(27, 67, 50, 0.18) 100%)"
+              background: "linear-gradient(to right, rgba(27,67,50,0.72) 40%, rgba(27,67,50,0.2) 100%)"
             }}
           />
         </div>
@@ -328,26 +341,7 @@ export default function Home({ onOpenQuote }: HomeProps) {
       </section>
 
       {/* 2. STATS BAR */}
-      <section className="bg-forest py-12 px-4 sm:px-6 lg:px-8 w-full text-white border-b border-light/10">
-        <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center select-none">
-          <div className="space-y-1">
-            <div className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-gold">300+</div>
-            <div className="text-[10px] sm:text-xs font-sans uppercase tracking-[0.15em] text-white/80">Tamamlanan Proje</div>
-          </div>
-          <div className="space-y-1">
-            <div className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-gold">10+ Hektar</div>
-            <div className="text-[10px] sm:text-xs font-sans uppercase tracking-[0.15em] text-white/80">Yıllık Deneyim</div>
-          </div>
-          <div className="space-y-1">
-            <div className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-gold">5 İlçe</div>
-            <div className="text-[10px] sm:text-xs font-sans uppercase tracking-[0.15em] text-white/80">Hizmet Alanı</div>
-          </div>
-          <div className="space-y-1">
-            <div className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-gold">Türkiye Geneli</div>
-            <div className="text-[10px] sm:text-xs font-sans uppercase tracking-[0.15em] text-white/80">Bitki Teslimatı</div>
-          </div>
-        </div>
-      </section>
+      <StatsBar />
 
       {/* 3. BOTANICAL DIVIDER */}
       <BotanicalDivider variant="light" />
@@ -371,30 +365,44 @@ export default function Home({ onOpenQuote }: HomeProps) {
             const IconComponent = service.icon;
             return (
               <FadeUp key={idx} delay={idx * 0.05}>
-                <div className="bg-white border border-light rounded-xl p-8 hover:shadow-xl transition-all duration-300 flex flex-col justify-between h-full group">
-                  <div className="space-y-4">
-                    {/* Sage icon */}
-                    <div className="w-12 h-12 rounded-lg bg-sage/10 flex items-center justify-center text-sage">
-                      <IconComponent className="w-6 h-6" />
+                <div className="bg-white border border-light rounded-xl overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col justify-between h-full group">
+                  <div>
+                    {/* Top Image Container */}
+                    <div className="relative aspect-[16/9] w-full overflow-hidden select-none bg-slate-50 border-b border-light/30">
+                      <Picture
+                        src={service.image}
+                        alt={service.alt}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-104 shadow-[inset_0_0_0_1px_rgba(27,67,50,0.08)]"
+                        loading="lazy"
+                      />
                     </div>
-                    {/* H3 service title */}
-                    <h3 className="font-serif text-2xl font-semibold text-forest">
-                      {service.title}
-                    </h3>
-                    {/* 2-sentence description */}
-                    <p className="text-xs sm:text-sm text-charcoal/70 leading-relaxed font-sans font-light">
-                      {service.desc}
-                    </p>
+                    {/* Content Pad */}
+                    <div className="p-8 pb-0 space-y-4">
+                      {/* Sage icon */}
+                      <div className="w-12 h-12 rounded-lg bg-sage/10 flex items-center justify-center text-sage">
+                        <IconComponent className="w-6 h-6" />
+                      </div>
+                      {/* H3 service title */}
+                      <h3 className="font-serif text-2xl font-semibold text-forest">
+                        {service.title}
+                      </h3>
+                      {/* 2-sentence description */}
+                      <p className="text-xs sm:text-sm text-charcoal/70 leading-relaxed font-sans font-light">
+                        {service.desc}
+                      </p>
+                    </div>
                   </div>
                   {/* Detaylar link */}
-                  <div className="pt-6 mt-6 border-t border-light/40">
-                    <Link
-                      to="/hizmetler"
-                      className="text-xs font-bold uppercase tracking-widest text-gold hover:text-forest transition-colors inline-flex items-center gap-1.5"
-                    >
-                      <span>Detaylar</span>
-                      <span>→</span>
-                    </Link>
+                  <div className="p-8 pt-0">
+                    <div className="pt-6 mt-6 border-t border-light/40">
+                      <Link
+                        to="/hizmetler"
+                        className="text-xs font-bold uppercase tracking-widest text-gold hover:text-forest transition-colors inline-flex items-center gap-1.5"
+                      >
+                        <span>Detaylar</span>
+                        <span>→</span>
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </FadeUp>
@@ -575,8 +583,8 @@ export default function Home({ onOpenQuote }: HomeProps) {
             <FadeUp>
               <div className="relative rounded-2xl overflow-hidden shadow-xl border border-light select-none">
                 <Picture
-                  src="https://images.unsplash.com/photo-1558904541-efa8c3a30fc9?q=80&w=1200"
-                  alt="Samsun Peyzaj Tasarım Ekibi"
+                  src="https://images.unsplash.com/photo-1599599810769-bcde5a160d32?auto=format&fit=crop&w=1200&q=80"
+                  alt="Peyzaj Sarayı profesyonel bahçe ekibi"
                   className="w-full h-[450px] object-cover"
                 />
                 <div className="absolute inset-0 bg-forest/10" />
@@ -628,8 +636,17 @@ export default function Home({ onOpenQuote }: HomeProps) {
       <BotanicalDivider variant="light" />
 
       {/* 8. TESTIMONIALS SECTION */}
-      <section className="py-20 bg-forest text-white overflow-hidden min-w-full">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-12">
+      <section className="relative py-20 bg-forest text-white overflow-hidden min-w-full">
+        {/* Soft background texture image overlay */}
+        <div className="absolute inset-0 z-0 opacity-[0.06] pointer-events-none select-none">
+          <Picture
+            src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=1200&q=80"
+            alt="Müşteri görüşleri arka plan yaprak dokusu"
+            className="w-full h-full object-cover"
+            loading="lazy"
+          />
+        </div>
+        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-12">
           
           <FadeUp>
             <div className="space-y-3">

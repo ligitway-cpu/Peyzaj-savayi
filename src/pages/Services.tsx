@@ -55,7 +55,7 @@ const SERVICES_DATA = [
       "Yapısal Sert Zemin ve Aydınlatma Tasarımları",
       "Uygulama Sonrası Detaylı Mimari Kontrol"
     ],
-    image: "https://images.unsplash.com/photo-1558904541-efa8c3a30fc9?q=80&w=1200"
+    image: "https://images.unsplash.com/photo-1508849789987-4e5333c12b78?auto=format&fit=crop&w=1200&q=80"
   },
   {
     id: "bahce-bakimi",
@@ -100,7 +100,7 @@ const SERVICES_DATA = [
       "Bölge İklimine ve Toprağına Uyumlu Sağlıklı Kökler",
       "Mevsimlik Rengarenk Çiçek Katmanları Sinerjisi"
     ],
-    image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1200&q=80"
+    image: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=1200&q=80"
   },
   {
     id: "sert-zemin",
@@ -115,7 +115,7 @@ const SERVICES_DATA = [
       "Su Göllenmesini Önleyen Gizli Altyapı Drenajı",
       "Kamelya, Pergola ve Gölgelik Zemin Mühendisliği"
     ],
-    image: "https://images.unsplash.com/photo-1508849789987-4e5333c12b78?auto=format&fit=crop&w=1200&q=80"
+    image: "https://images.unsplash.com/photo-1621271103984-7d9af24b6110?auto=format&fit=crop&w=1200&q=80"
   }
 ];
 
