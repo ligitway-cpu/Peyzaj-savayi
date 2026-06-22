@@ -200,7 +200,7 @@ export default function Home({ onOpenQuote }: HomeProps) {
       title: "Peyzaj Tasarımı",
       desc: "Arazinizin yapısına özel 3D rüzgar ve güneş analizli estetik planlar üretiyoruz. Hayallerinizi mühendislik standartlarında çizime döküyoruz.",
       icon: Compass,
-      image: "https://images.unsplash.com/photo-1558904541-efa8c3a30fc9?q=80&w=800",
+      image: "/images/peyzaj_tasarimi.jpg",
       alt: "Profesyonel peyzaj tasarımı örneği"
     },
     {
@@ -214,14 +214,14 @@ export default function Home({ onOpenQuote }: HomeProps) {
       title: "Rulo Çim Uygulama",
       desc: "Yabancı ot barındırmayan hazır rulo çimlerimizle bahçenizi saatler içinde kapatıyoruz. Güçlü kök tutunumu ile kusursuz yeşillik sağlıyoruz.",
       icon: Grid,
-      image: "https://images.unsplash.com/photo-1550226891-ef816aed4ca8?q=80&w=800",
+      image: "/images/rulo_cim.jpg",
       alt: "Rulo çim uygulama ve serim işlemi"
     },
     {
       title: "Süs Bitkisi Satışı",
       desc: "Seralarımızda özenle yetiştirdiğimiz ithal ve yerli soliter ağaçları sunuyoruz. Her bütçeye uygun sağlıklı ve budanmış fidan tedarik ediyoruz.",
       icon: Sprout,
-      image: "https://images.unsplash.com/photo-1466692476868-aef1dfb1e736?q=80&w=800",
+      image: "/images/sus_bitkisi.jpg",
       alt: "Tekkeköy'de süs bitkisi üretim tesisi"
     },
     {
@@ -242,11 +242,11 @@ export default function Home({ onOpenQuote }: HomeProps) {
 
   // Instagram feed image links
   const instagramFeed = [
-    { id: 1, image: "https://images.unsplash.com/photo-1558904541-efa8c3a30fc9?auto=format&fit=crop&w=400&q=80" },
+    { id: 1, image: "/images/peyzaj_tasarimi.jpg" },
     { id: 2, image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=400&q=80" },
     { id: 3, image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=400&q=80" },
-    { id: 4, image: "https://images.unsplash.com/photo-1550226891-ef816aed4ca8?auto=format&fit=crop&w=400&q=80" },
-    { id: 5, image: "https://images.unsplash.com/photo-1466692476868-aef1dfb1e736?auto=format&fit=crop&w=400&q=80" },
+    { id: 4, image: "/images/rulo_cim.jpg" },
+    { id: 5, image: "/images/sus_bitkisi.jpg" },
     { id: 6, image: "https://images.unsplash.com/photo-1563241527-3004b7be0ffd?auto=format&fit=crop&w=400&q=80" }
   ];
 
@@ -265,7 +265,7 @@ export default function Home({ onOpenQuote }: HomeProps) {
         {/* Immersive background photo */}
         <div className="absolute inset-0 z-0">
           <Picture
-            src="https://images.unsplash.com/photo-1558904541-efa8c3a30fc9?q=80&w=2000"
+            src="/images/hero_bg.jpg"
             alt="Samsun'da profesyonel peyzaj tasarımı ve bahçe düzenlemesi"
             loading="eager"
             fetchPriority="high"

@@ -55,7 +55,7 @@ const SERVICES_DATA = [
       "Yapısal Sert Zemin ve Aydınlatma Tasarımları",
       "Uygulama Sonrası Detaylı Mimari Kontrol"
     ],
-    image: "https://images.unsplash.com/photo-1558904541-efa8c3a30fc9?auto=format&fit=crop&w=1200&q=80"
+    image: "/images/peyzaj_tasarimi.jpg"
   },
   {
     id: "bahce-bakimi",
@@ -85,7 +85,7 @@ const SERVICES_DATA = [
       "Toprak Altı Kum Entegrasyonu ve Drenaj Kontrolü",
       "Akıllı Otomatik Rotorlu Sulama Entegrasyonu"
     ],
-    image: "https://images.unsplash.com/photo-1550226891-ef816aed4ca8?auto=format&fit=crop&w=1200&q=80"
+    image: "/images/rulo_cim.jpg"
   },
   {
     id: "sus-bitkisi",
@@ -100,7 +100,7 @@ const SERVICES_DATA = [
       "Bölge İklimine ve Toprağına Uyumlu Sağlıklı Kökler",
       "Mevsimlik Rengarenk Çiçek Katmanları Sinerjisi"
     ],
-    image: "https://images.unsplash.com/photo-1466692476868-aef1dfb1e736?auto=format&fit=crop&w=1200&q=80"
+    image: "/images/sus_bitkisi.jpg"
   },
   {
     id: "sert-zemin",
