@@ -5,7 +5,7 @@ interface PictureProps extends HTMLAttributes<HTMLImageElement> {
   alt: string;
   className?: string;
   loading?: "lazy" | "eager";
-  fetchpriority?: "high" | "low" | "auto";
+  fetchPriority?: "high" | "low" | "auto";
   style?: CSSProperties;
 }
 
@@ -14,7 +14,7 @@ export default function Picture({
   alt,
   className = "w-full h-full object-cover",
   loading = "lazy",
-  fetchpriority,
+  fetchPriority,
   ...props
 }: PictureProps) {
   const isUnsplash = src.includes("unsplash.com");
@@ -52,7 +52,7 @@ export default function Picture({
         alt={alt}
         loading={loading}
         // @ts-ignore
-        fetchpriority={fetchpriority}
+        fetchPriority={fetchPriority}
         className={className}
         referrerPolicy="no-referrer"
         {...props}

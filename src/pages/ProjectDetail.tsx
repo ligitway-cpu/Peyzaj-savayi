@@ -84,7 +84,7 @@ export default function ProjectDetail() {
             src={project.mainImage}
             alt={project.title}
             loading="eager"
-            fetchpriority="high"
+            fetchPriority="high"
             className="w-full h-full object-cover object-center transform scale-100 transition-transform duration-700 hover:scale-103"
           />
           {/* Elegant Forest & Charcoal gradient for readable text contrast */}

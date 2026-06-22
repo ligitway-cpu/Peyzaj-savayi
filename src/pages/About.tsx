@@ -78,7 +78,7 @@ export default function About() {
             src="https://images.unsplash.com/photo-1530731141654-59610f3c229e?auto=format&fit=crop&w=1600&q=80"
             alt="Peyzaj Sarayı bitki üretim tesisi"
             loading="eager"
-            fetchpriority="high"
+            fetchPriority="high"
             className="w-full h-full object-cover object-center brightness-[0.4]"
           />
           {/* Subtle forest overlay shadow */}

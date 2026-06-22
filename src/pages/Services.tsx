@@ -55,7 +55,7 @@ const SERVICES_DATA = [
       "Yapısal Sert Zemin ve Aydınlatma Tasarımları",
       "Uygulama Sonrası Detaylı Mimari Kontrol"
     ],
-    image: "https://images.unsplash.com/photo-1508849789987-4e5333c12b78?auto=format&fit=crop&w=1200&q=80"
+    image: "https://images.unsplash.com/photo-1558904541-efa8c3a30fc9?auto=format&fit=crop&w=1200&q=80"
   },
   {
     id: "bahce-bakimi",
@@ -70,7 +70,7 @@ const SERVICES_DATA = [
       "Toprak pH Dengesi ve Gübreleme Yönetimi",
       "Periyodik Hidrolik ve Bitki Sağlığı Muayenesi"
     ],
-    image: "https://images.unsplash.com/photo-1592417817098-8f3d6eb19675?auto=format&fit=crop&w=1200&q=80"
+    image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1200&q=80"
   },
   {
     id: "cim-uygulama",
@@ -85,7 +85,7 @@ const SERVICES_DATA = [
       "Toprak Altı Kum Entegrasyonu ve Drenaj Kontrolü",
       "Akıllı Otomatik Rotorlu Sulama Entegrasyonu"
     ],
-    image: "https://images.unsplash.com/photo-1533460004989-cef01064af7e?auto=format&fit=crop&w=1200&q=80"
+    image: "https://images.unsplash.com/photo-1550226891-ef816aed4ca8?auto=format&fit=crop&w=1200&q=80"
   },
   {
     id: "sus-bitkisi",
@@ -100,7 +100,7 @@ const SERVICES_DATA = [
       "Bölge İklimine ve Toprağına Uyumlu Sağlıklı Kökler",
       "Mevsimlik Rengarenk Çiçek Katmanları Sinerjisi"
     ],
-    image: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=1200&q=80"
+    image: "https://images.unsplash.com/photo-1466692476868-aef1dfb1e736?auto=format&fit=crop&w=1200&q=80"
   },
   {
     id: "sert-zemin",
@@ -115,7 +115,7 @@ const SERVICES_DATA = [
       "Su Göllenmesini Önleyen Gizli Altyapı Drenajı",
       "Kamelya, Pergola ve Gölgelik Zemin Mühendisliği"
     ],
-    image: "https://images.unsplash.com/photo-1621271103984-7d9af24b6110?auto=format&fit=crop&w=1200&q=80"
+    image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80"
   }
 ];
 
@@ -159,7 +159,7 @@ export default function Services() {
             src="https://images.unsplash.com/photo-1558904541-efa8c3a30fc9?q=80&w=2000"
             alt="Peyzaj Sarayı Hizmetlerimiz"
             loading="eager"
-            fetchpriority="high"
+            fetchPriority="high"
             className="w-full h-full object-cover object-center"
           />
           {/* Forest green overlay */}

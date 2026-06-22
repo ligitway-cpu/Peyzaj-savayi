@@ -200,42 +200,42 @@ export default function Home({ onOpenQuote }: HomeProps) {
       title: "Peyzaj Tasarımı",
       desc: "Arazinizin yapısına özel 3D rüzgar ve güneş analizli estetik planlar üretiyoruz. Hayallerinizi mühendislik standartlarında çizime döküyoruz.",
       icon: Compass,
-      image: "https://images.unsplash.com/photo-1508849789987-4e5333c12b78?q=80&w=800",
+      image: "https://images.unsplash.com/photo-1558904541-efa8c3a30fc9?q=80&w=800",
       alt: "Profesyonel peyzaj tasarımı örneği"
     },
     {
       title: "Bahçe Bakımı",
       desc: "Ziraat mühendisleri kontrolünde mevsimsel gübreleme ve profesyonel budama yapıyoruz. Bitkilerinizin zerafetini dört mevsim koruyoruz.",
       icon: Trees,
-      image: "https://images.unsplash.com/photo-1617104424032-b9bd6972d0e4?q=80&w=800",
+      image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?q=80&w=800",
       alt: "Bahçe bakımı ve çalı budama hizmeti"
     },
     {
       title: "Rulo Çim Uygulama",
       desc: "Yabancı ot barındırmayan hazır rulo çimlerimizle bahçenizi saatler içinde kapatıyoruz. Güçlü kök tutunumu ile kusursuz yeşillik sağlıyoruz.",
       icon: Grid,
-      image: "https://images.unsplash.com/photo-1533460004989-cef01064af7e?q=80&w=800",
+      image: "https://images.unsplash.com/photo-1550226891-ef816aed4ca8?q=80&w=800",
       alt: "Rulo çim uygulama ve serim işlemi"
     },
     {
       title: "Süs Bitkisi Satışı",
       desc: "Seralarımızda özenle yetiştirdiğimiz ithal ve yerli soliter ağaçları sunuyoruz. Her bütçeye uygun sağlıklı ve budanmış fidan tedarik ediyoruz.",
       icon: Sprout,
-      image: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?q=80&w=800",
+      image: "https://images.unsplash.com/photo-1466692476868-aef1dfb1e736?q=80&w=800",
       alt: "Tekkeköy'de süs bitkisi üretim tesisi"
     },
     {
       title: "Peyzaj Uygulamaları",
       desc: "Sert zemin, traverten yürüme yolları ve yapısal peyzaj duvarları inşa ediyoruz. Doğal taş kaplamalarıyla bahçenize asil bir iskelet kazandırıyoruz.",
       icon: Briefcase,
-      image: "https://images.unsplash.com/photo-1621271103984-7d9af24b6110?q=80&w=800",
+      image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=800",
       alt: "Doğal taş döşeme ve sert zemin peyzaj uygulaması"
     },
     {
       title: "Sulama Sistemleri",
       desc: "Otomatik yağmur sensörlü akıllı sulama hatları ile %50 su tasarrufu sağlıyoruz. Bitki gruplarına göre nokta atışı nemlendirme planlıyoruz.",
       icon: Droplets,
-      image: "https://images.unsplash.com/photo-1591857177580-fc82b1784524?q=80&w=800",
+      image: "https://images.unsplash.com/photo-1563241527-3004b7be0ffd?q=80&w=800",
       alt: "Otomatik damla sulama sistemi kurulumu"
     }
   ];
@@ -243,11 +243,11 @@ export default function Home({ onOpenQuote }: HomeProps) {
   // Instagram feed image links
   const instagramFeed = [
     { id: 1, image: "https://images.unsplash.com/photo-1558904541-efa8c3a30fc9?auto=format&fit=crop&w=400&q=80" },
-    { id: 2, image: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=400&q=80" },
-    { id: 3, image: "https://images.unsplash.com/photo-1508849789987-4e5333c12b78?auto=format&fit=crop&w=400&q=80" },
-    { id: 4, image: "https://images.unsplash.com/photo-1533460004989-cef01064af7e?auto=format&fit=crop&w=400&q=80" },
-    { id: 5, image: "https://images.unsplash.com/photo-1592417817098-8f3d6eb19675?auto=format&fit=crop&w=400&q=80" },
-    { id: 6, image: "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=400&q=80" }
+    { id: 2, image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=400&q=80" },
+    { id: 3, image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=400&q=80" },
+    { id: 4, image: "https://images.unsplash.com/photo-1550226891-ef816aed4ca8?auto=format&fit=crop&w=400&q=80" },
+    { id: 5, image: "https://images.unsplash.com/photo-1466692476868-aef1dfb1e736?auto=format&fit=crop&w=400&q=80" },
+    { id: 6, image: "https://images.unsplash.com/photo-1563241527-3004b7be0ffd?auto=format&fit=crop&w=400&q=80" }
   ];
 
   return (
@@ -268,7 +268,7 @@ export default function Home({ onOpenQuote }: HomeProps) {
             src="https://images.unsplash.com/photo-1558904541-efa8c3a30fc9?q=80&w=2000"
             alt="Samsun'da profesyonel peyzaj tasarımı ve bahçe düzenlemesi"
             loading="eager"
-            fetchpriority="high"
+            fetchPriority="high"
             className="w-full h-full object-cover object-center scale-103 animate-[subtle-zoom_20s_infinite_alternate]"
           />
           {/* Dark green overlay (linear-gradient right: 72% opacity left → 20% opacity right) */}
