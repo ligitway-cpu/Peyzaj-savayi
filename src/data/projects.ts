@@ -16,9 +16,9 @@ export const PROJECTS: Project[] = [
     challenge: "Bahçenin uzun süre bakımsız kalması nedeniyle yabani otlar tüm çim alanı kaplamış ve süs ağaçları budanmadığı için formunu kaybetmişti.",
     solution: "Yabani otlar organik yöntemlerle temizlendikten sonra toprak özel makinelerle havalandırıldı. Ağaçlara gençleştirme budaması uygulanarak bitki sağlığı geri kazandırıldı. Toprak vitamin takviyeleri ile desteklendi.",
     result: "Bahçe eski asaletine kavuşurken, toprak vitamin takviyeleri sayesinde bitkiler daha gür ve canlı bir görünüme sahip oldu. Peyzaj alanı sürdürülebilir bir yapıya kavuştu.",
-    mainImage: "https://images.unsplash.com/photo-1592417817098-8f3d6eb19675?auto=format&fit=crop&w=1200&q=80",
+    mainImage: "/images/atakum_bahce_bakimi.jpg",
     gallery: [
-      "https://images.unsplash.com/photo-1592417817098-8f3d6eb19675?auto=format&fit=crop&w=1200&q=80",
+      "/images/atakum_bahce_bakimi.jpg",
       "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&w=1200&q=80",
       "https://images.unsplash.com/photo-1558904541-efa8c3a30fc9?q=80&w=1200"
     ],

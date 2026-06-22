@@ -80,7 +80,7 @@ export const SERVICES: Service[] = [
     description: "Ziraat mühendisleri ve uzman bahçıvan kontrolünde, bitkilerinizin estetik formunu ve sağlığını dört mevsim boyunca koruyoruz.",
     longDescription: "Yaşayan bir sanat eseri olan peyzaj, ilk günkü ihtişamını sürdürebilmek için kesintisiz bakım ister. Alanında profesyonel ekibimizle; çim biçme, mevsimsel budama, gübreleme, koruyucu ilaçlama ve otomatik sulama ayarlarını periyodik olarak gerçekleştiriyoruz. Ziraat mühendislerimiz tarafından yapılan düzenli sağlık taraması ile zararlılara karşı erken dönem önlemler alıyoruz.",
     iconName: "ShieldCheck",
-    image: "https://images.unsplash.com/photo-1592417817098-8f3d6eb19675?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/atakum_bahce_bakimi.jpg",
     features: [
       "Haftalık veya 15 günlük periyodik ziyaret planları",
       "Mevsimsel form budamaları (Topiary) ve gençleştirme",

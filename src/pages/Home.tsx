@@ -471,7 +471,7 @@ export default function Home({ onOpenQuote }: HomeProps) {
                     className="group relative block w-full h-[550px] rounded-xl overflow-hidden shadow-md border border-light"
                   >
                     <Picture
-                      src="https://images.unsplash.com/photo-1592417817098-8f3d6eb19675?auto=format&fit=crop&w=1200&q=80"
+                      src="/images/atakum_bahce_bakimi.jpg"
                       alt="Atakum Bahçe Temizliği"
                       className="w-full h-full object-cover group-hover:scale-103 transition-transform duration-700"
                     />
