@@ -115,7 +115,7 @@ const SERVICES_DATA = [
       "Su Göllenmesini Önleyen Gizli Altyapı Drenajı",
       "Kamelya, Pergola ve Gölgelik Zemin Mühendisliği"
     ],
-    image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80"
+    image: "/images/peyzaj_uygulamalari.jpg"
   }
 ];
 

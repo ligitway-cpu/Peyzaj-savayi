@@ -228,14 +228,14 @@ export default function Home({ onOpenQuote }: HomeProps) {
       title: "Peyzaj Uygulamaları",
       desc: "Sert zemin, traverten yürüme yolları ve yapısal peyzaj duvarları inşa ediyoruz. Doğal taş kaplamalarıyla bahçenize asil bir iskelet kazandırıyoruz.",
       icon: Briefcase,
-      image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=800",
+      image: "/images/peyzaj_uygulamalari.jpg",
       alt: "Doğal taş döşeme ve sert zemin peyzaj uygulaması"
     },
     {
       title: "Sulama Sistemleri",
       desc: "Otomatik yağmur sensörlü akıllı sulama hatları ile %50 su tasarrufu sağlıyoruz. Bitki gruplarına göre nokta atışı nemlendirme planlıyoruz.",
       icon: Droplets,
-      image: "https://images.unsplash.com/photo-1563241527-3004b7be0ffd?q=80&w=800",
+      image: "/images/sulama_sistemleri.jpg",
       alt: "Otomatik damla sulama sistemi kurulumu"
     }
   ];
@@ -244,10 +244,10 @@ export default function Home({ onOpenQuote }: HomeProps) {
   const instagramFeed = [
     { id: 1, image: "/images/peyzaj_tasarimi.jpg" },
     { id: 2, image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=400&q=80" },
-    { id: 3, image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=400&q=80" },
+    { id: 3, image: "/images/peyzaj_uygulamalari.jpg" },
     { id: 4, image: "/images/rulo_cim.jpg" },
     { id: 5, image: "/images/sus_bitkisi.jpg" },
-    { id: 6, image: "https://images.unsplash.com/photo-1563241527-3004b7be0ffd?auto=format&fit=crop&w=400&q=80" }
+    { id: 6, image: "/images/sulama_sistemleri.jpg" }
   ];
 
   return (
