@@ -27,17 +27,20 @@ export default function About() {
     {
       name: "Selim Saraylı",
       title: "Kurucu & Baş Peyzaj Mimarı",
-      desc: "Samsun ve çevresinde lüks villa peyzajlarının konsept tasarımlarını ve estetik koordinasyonunu yönetiyor."
+      desc: "Samsun ve çevresinde lüks villa peyzajlarının konsept tasarımlarını ve estetik koordinasyonunu yönetiyor.",
+      image: "/images/team_member_1.jpg"
     },
     {
       name: "Elif Demir",
       title: "Kıdemli Ziraat Mühendisi",
-      desc: "Tekkeköy fidanlık depomuzdaki üretim kalitesini, toprak zenginleştirmeyi ve bitki bitki sağlığını denetler."
+      desc: "Tekkeköy fidanlık depomuzdaki üretim kalitesini, toprak zenginleştirmeyi ve bitki bitki sağlığını denetler.",
+      image: "/images/team_member_2.jpg"
     },
     {
       name: "Kemal Öztürk",
       title: "Saha Uygulama Şefi",
-      desc: "Alan tesviye işlemlerinden, otomatik akıllı sulama montajı ve rulo çim serim işlemlerinden sorumlu şef."
+      desc: "Alan tesviye işlemlerinden, otomatik akıllı sulama montajı ve rulo çim serim işlemlerinden sorumlu şef.",
+      image: "/images/team_member_3.jpg"
     }
   ];
 
@@ -210,9 +213,12 @@ export default function About() {
               key={i} 
               className="bg-white border border-light/95 rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-shadow duration-300 flex flex-col h-full text-center animate-on-scroll"
             >
-              {/* Grey placeholder avatar as required */}
               <div className="h-64 bg-slate-200 flex items-center justify-center relative select-none">
-                <Users className="w-20 h-20 text-slate-400 opacity-60" />
+                <img 
+                  src={member.image} 
+                  alt={member.name} 
+                  className="w-full h-full object-cover"
+                />
                 <div className="absolute inset-0 bg-black/5"></div>
                 <div className="absolute bottom-3 right-3 bg-forest text-gold text-[8px] uppercase tracking-widest font-bold px-2 py-1 rounded">
                   Peyzaj Sarayı Yetkilisi
